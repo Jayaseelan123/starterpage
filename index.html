@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Automation Starter Course | abs academy</title>
+    <meta name="description"
+        content="Join our 1-hour free AI Automation Starter Course and learn how to automate your business workflows without coding. Register now for instant access.">
+
+    <!-- Open Graph / SEO -->
+    <meta property="og:title" content="AI Automation Starter Course | abs academy">
+    <meta property="og:description" content="Unlock the power of AI & Automation. Start your 1-hour free course today.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="main-nav">
+        <div class="container nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="logo23.png" alt="logo" width="100px" height="70px">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero & Registration Section -->
+    <main class="container">
+        <div class="hero-wrapper">
+            <!-- Left: Hero Content -->
+            <section class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-circle" style="font-size: 0.5rem; color: #10b981;"></i>
+                    <span>Course • Instant Access</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Start Your Learning Journey with <br><span>Our Starter Course</span>
+                </h1>
+
+                <p style="font-size: 1.125rem; color: #64748b; margin-top: 24px; max-width: 540px;">
+                    Learn how to build powerful automation systems for your business using tools like ChatGPT, Make, and
+                    WhatsApp — all without writing a single line of code.
+                </p>
+
+                <ul class="hero-points">
+                    <li><i class="fas fa-check-circle"></i> 10 Comprehensive Lessons</li>
+                    <li><i class="fas fa-check-circle"></i> Lifetime Access to Materials</li>
+                    <li><i class="fas fa-check-circle"></i> Practical Real-World Examples</li>
+                    <li><i class="fas fa-check-circle"></i> Professional Certificate on Completion</li>
+                </ul>
+            </section>
+
+            <!-- Right: Registration Form -->
+            <div class="reg-card" id="register-gate">
+                <!-- SUCCESS VIEW (Hidden by default) -->
+                <div id="success-area">
+                    <div class="success-icon"><i class="fas fa-check"></i></div>
+                    <h2 style="margin-bottom: 12px;">Registration Successful!</h2>
+                    <p style="color: #64748b; margin-bottom: 32px;">Your access is being provisioned. We are redirecting
+                        you to your first lesson...</p>
+                    <div class="submit-btn" style="background: #10b981; pointer-events: none;">
+                        <i class="fas fa-spinner fa-spin"></i> Loading course...
+                    </div>
+                </div>
+
+                <!-- FORM VIEW -->
+                <form id="starterForm">
+                    <h2 style="margin-bottom: 32px; font-size: 1.5rem;">Create Your Free Account</h2>
+
+                    <div class="form-group">
+                        <label class="form-label">Full Name *</label>
+                        <input type="text" id="name" class="form-input" placeholder="e.g. John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Email Address *</label>
+                        <input type="email" id="email" class="form-input" placeholder="name@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Profession</label>
+                        <select id="profession-select" class="form-select" required>
+                            <option value="" disabled selected>Select your profession</option>
+                            <option value="entrepreneur">Entrepreneur</option>
+                            <option value="agency_owner">Agency Owner</option>
+                            <option value="freelancer">Freelancer</option>
+                            <option value="developer">Developer</option>
+                            <option value="marketer">Marketer</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Phone Number (WhatsApp) *</label>
+                        <div class="phone-grid">
+                            <select id="country-code" class="form-select">
+                                <option value="+91" selected>🇮🇳 +91</option>
+                                <option value="+1">🇺🇸 +1</option>
+                                <option value="+44">🇬🇧 +44</option>
+                            </select>
+                            <input type="tel" id="phone" class="form-input" placeholder="98765 43210" required>
+                        </div>
+                        <label class="whatsapp-toggle-wrap">
+                            <input type="checkbox" id="whatsapp-toggle" checked> WhatsApp same as phone
+                        </label>
+                    </div>
+
+                    <!-- Hidden WhatsApp Fields if Different -->
+                    <div class="whatsapp-fields" id="whatsapp-fields">
+                        <div class="form-group">
+                            <label class="form-label">WhatsApp Number</label>
+                            <div class="phone-grid">
+                                <select id="whatsapp-code" class="form-select">
+                                    <option value="+91" selected>🇮🇳 +91</option>
+                                    <option value="+1">🇺🇸 +1</option>
+                                    <option value="+44">🇬🇧 +44</option>
+                                </select>
+                                <input type="tel" id="whatsapp-num" class="form-input" placeholder="WhatsApp Number">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 32px;">
+                        <button type="submit" id="submit-btn" class="submit-btn">
+                            🚀 Start Learning Now — It's Free!
+                        </button>
+                        <p style="text-align: center; margin-top: 16px; font-size: 0.85rem; color: #64748b;">
+                            ✅ Guaranteed 100% Free Access • No Credit Card Required
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 abs academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
